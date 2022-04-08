@@ -56,10 +56,10 @@ HashMap * createMap(long capacity)
     HashMap *map = (HashMap *) malloc(sizeof(HashMap));
     map -> buckets = malloc(sizeof(Pair*) * capacity);
     map -> size = 0;
+    map -> capacity = capacity;
     for(int i  = 0; i < capacity ; i++)
     {
       map -> buckets[i] = NULL;
-      map -> capacity = capacity;
     }
     map -> current = -1;
     return map;
