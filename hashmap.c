@@ -104,7 +104,7 @@ Pair * searchMap(HashMap * map,  char * key)
         }
     }
     map -> current = hashPosicion;
-    return NULL;
+    return bloque;
 }
 
 Pair * firstMap(HashMap * map) {

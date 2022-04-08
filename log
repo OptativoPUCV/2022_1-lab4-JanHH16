@@ -175,3 +175,14 @@ vi.,  8 de abr. de 2022 18:38:47:
  tests:  5|4
 total_score: 30/70
 971783e
+vi.,  8 de abr. de 2022 18:39:29: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+test.c: In function 'searchMap':
+hashmap.c:107:12: error: 'bloque' may be used uninitialized in this function [-Werror=maybe-uninitialized]
+     return bloque;
+            ^~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+c2f947d
