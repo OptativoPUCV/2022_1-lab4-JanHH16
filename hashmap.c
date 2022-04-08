@@ -90,10 +90,10 @@ Pair * searchMap(HashMap * map,  char * key)
             return map -> buckets[hashPosicion];
 
         hashPosicion++;
-        hashPosicion %= map -> size;
+        hashPosicion = (hashPosicion + 1) % map -> capacity;
     }
 
-    return map -> buckets[hashPosicion];
+    return NULL;
 }
 
 Pair * firstMap(HashMap * map) {
