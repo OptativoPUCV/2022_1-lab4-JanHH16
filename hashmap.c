@@ -93,7 +93,7 @@ Pair * searchMap(HashMap * map,  char * key)
         hashPosicion %= map -> size;
     }
 
-    return NULL;
+    return map -> buckets[hashPosicion];
 }
 
 Pair * firstMap(HashMap * map) {
