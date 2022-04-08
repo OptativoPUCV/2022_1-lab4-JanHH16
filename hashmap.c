@@ -83,8 +83,8 @@ void eraseMap(HashMap * map,  char * key) {
 Pair * searchMap(HashMap * map,  char * key) 
 {   
     int hashPosicion;
-    hashPosicion = hash(key, map -> capacity);
-    while(map -> buckets[hashPosicion] == NULL)
+    hashPosicion =  hash(key, map -> capacity);
+    while(map -> buckets[hashPosicion] != NULL)
     {
         if(map -> buckets[hashPosicion] -> key == key)
             return map -> buckets[hashPosicion]; //-> value;
@@ -95,6 +95,7 @@ Pair * searchMap(HashMap * map,  char * key)
             hashPosicion++; 
         }
     }
+    map -> current = hashPosicion;
     return NULL;
 }
 
