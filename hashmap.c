@@ -100,7 +100,7 @@ Pair * searchMap(HashMap * map,  char * key)
         }
     }
     map -> current = hashPosicion;
-    return NULL;
+    return map -> buckets[hashPosicion] -> value;
 }
 
 Pair * firstMap(HashMap * map) {
