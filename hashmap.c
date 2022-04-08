@@ -87,7 +87,7 @@ Pair * searchMap(HashMap * map,  char * key)
     while(map -> buckets[hashPosicion] != NULL)
     {
         if(map -> buckets[hashPosicion] -> key == key)
-            return map -> buckets[hashPosicion]; //-> value;
+            return map -> buckets[hashPosicion] -> value;
         else
         {
             if(hashPosicion == map -> capacity)
