@@ -94,10 +94,7 @@ Pair * searchMap(HashMap * map,  char * key)
                 hashPosicion = 0;
             hashPosicion++; 
         }
-        
-        //hashPosicion %= map -> size;
     }
-
     return NULL;
 }
 
