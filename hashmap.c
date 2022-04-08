@@ -89,7 +89,7 @@ Pair * searchMap(HashMap * map,  char * key)
         if(map -> buckets[hashPosicion] -> key == key)
         {
             map -> current = hashPosicion;
-            return createPair(key,map->buckets[hashPosicion]->value);
+            return map -> buckets[hashPosicion];
         }
         else
         {
