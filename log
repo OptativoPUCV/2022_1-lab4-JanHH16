@@ -2,3 +2,13 @@ Fri Apr  8 15:02:55 UTC 2022:
  tests:  0|6
 total_score: 0/70
 50a4e76
+Fri Apr  8 15:14:46 UTC 2022: 
+ hashmap.c | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘createMap’:
+hashmap.c:57:19: error: incompatible types when assigning to type ‘HashMap {aka struct HashMap}’ from type ‘void *’
+     map[capacity] = NULL;
+                   ^
+Compilation failed
+9c1de1a
