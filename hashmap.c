@@ -93,7 +93,7 @@ Pair * searchMap(HashMap * map,  char * key)
         }
         else
         {
-            if(hashPosicion == map -> capacity)
+            if(hashPosicion == (map -> capacity))
                 hashPosicion = 0;
             else
                 hashPosicion++; 
