@@ -202,3 +202,14 @@ hashmap.c:107:12: error: function returns address of local variable [-Werror=ret
 cc1.exe: all warnings being treated as errors
 Compilation failed
 2e9ca29
+vi.,  8 de abr. de 2022 18:40:44: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+test.c: In function 'searchMap':
+hashmap.c:107:12: error: 'bloque' may be used uninitialized in this function [-Werror=maybe-uninitialized]
+     return bloque;
+            ^~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+0116fc0
