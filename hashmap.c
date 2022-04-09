@@ -84,13 +84,12 @@ Pair * searchMap(HashMap * map,  char * key)
 {   
     int hashPosicion;
     hashPosicion =  hash(key, map -> capacity);
-    //map -> buckets[hashPosicion] -> key = key;
     
     //Pair *bloque;
 
     while(map -> buckets[hashPosicion] != NULL)
     {   
-        if((map -> buckets[hashPosicion] -> key) == key)
+        if(is_equal(map -> buckets[hashPosicion] -> key,key)) //(map -> buckets[hashPosicion] -> key) == key)
         {
             map -> current = hashPosicion;
             //bloque -> key = map -> buckets[hashPosicion] -> key;

@@ -350,3 +350,9 @@ sá.,  9 de abr. de 2022 17:48:00:
  tests:  5|4
 total_score: 30/70
 ab5a477
+sá.,  9 de abr. de 2022 18:00:27: 
+ hashmap.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+ tests:  5|4
+total_score: 30/70
+fbdd21b
