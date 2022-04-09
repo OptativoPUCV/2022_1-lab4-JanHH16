@@ -367,3 +367,14 @@ hashmap.c:95:27: error: 'bloque' may be used uninitialized in this function [-We
 cc1.exe: all warnings being treated as errors
 Compilation failed
 7b20f04
+sá.,  9 de abr. de 2022 18:24:25: 
+ hashmap.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function 'searchMap':
+hashmap.c:97:49: error: return from incompatible pointer type [-Werror=incompatible-pointer-types]
+             return map -> buckets[hashPosicion] -> key;
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+c786741
