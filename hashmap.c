@@ -88,7 +88,8 @@ Pair * searchMap(HashMap * map,  char * key)
     Pair *bloque;
 
     while(map -> buckets[hashPosicion] != NULL)
-    {
+    {   
+        return map -> buckets[hashPosicion] -> value;
         if((map -> buckets[hashPosicion] -> key) == key)
         {
             map -> current = hashPosicion;

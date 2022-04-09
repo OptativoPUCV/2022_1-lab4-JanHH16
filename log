@@ -321,3 +321,9 @@ hashmap.c:95:27: error: 'bloque' may be used uninitialized in this function [-We
 cc1.exe: all warnings being treated as errors
 Compilation failed
 da1fc13
+sá.,  9 de abr. de 2022 17:42:31: 
+ hashmap.c | 1 +
+ 1 file changed, 1 insertion(+)
+ tests:  5|4
+total_score: 30/70
+8f1839f
