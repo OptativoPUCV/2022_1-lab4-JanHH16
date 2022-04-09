@@ -277,3 +277,14 @@ hashmap.c:95:27: error: 'bloque' may be used uninitialized in this function [-We
 cc1.exe: all warnings being treated as errors
 Compilation failed
 0f34d41
+sá.,  9 de abr. de 2022 17:25:40: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+test.c: In function 'searchMap':
+hashmap.c:95:27: error: 'bloque' may be used uninitialized in this function [-Werror=maybe-uninitialized]
+             bloque -> key = map -> buckets[hashPosicion] -> key;
+             ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+7b12151
