@@ -92,7 +92,7 @@ Pair * searchMap(HashMap * map,  char * key)
         if(map -> buckets[hashPosicion] -> key == key)
         {
             map -> current = hashPosicion;
-            bloque -> key = map -> buckets[hashPosicion] -> key;
+            //bloque -> key = map -> buckets[hashPosicion] -> key;
             bloque -> value = map -> buckets[hashPosicion] -> value;
             return bloque;
         }
@@ -125,7 +125,7 @@ Pair * searchMap(HashMap * map,  char * key)
     }
     */
     map -> current = hashPosicion;
-    return NULL;
+    return bloque;
 }
 
 Pair * firstMap(HashMap * map) {
