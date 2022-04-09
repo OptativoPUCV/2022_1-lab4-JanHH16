@@ -219,3 +219,17 @@ vi.,  8 de abr. de 2022 18:45:58:
  tests:  5|4
 total_score: 30/70
 6584d28
+sá.,  9 de abr. de 2022 17:15:46: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function 'searchMap':
+hashmap.c:96:20: error: return from incompatible pointer type [-Werror=incompatible-pointer-types]
+             return key;
+                    ^~~
+hashmap.c:88:11: error: variable 'bloque' set but not used [-Werror=unused-but-set-variable]
+     Pair *bloque;
+           ^~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+65321d5
