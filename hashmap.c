@@ -84,29 +84,10 @@ Pair * searchMap(HashMap * map,  char * key)
 {   
     int hashPosicion;
     hashPosicion =  hash(key, map -> capacity);
+
     Pair *bloque;
 
-    while(map -> buckets[hashPosicion] != NULL && map -> buckets[hashPosicion] -> key != NULL)
-    {
-        //hashPosicion = (hashPosicion + 1) % map -> capacity;
-        if(map -> buckets[hashPosicion] -> key == key)
-        {
-            map -> current = hashPosicion;
-            //bloque -> key = map -> buckets[hashPosicion] -> key;
-            bloque -> value = map -> buckets[hashPosicion] -> value;
-            return bloque;
-        }
-        else
-        {
-            if(hashPosicion == (map -> capacity))
-                hashPosicion = 0;
-            else
-                hashPosicion++; 
-        }
-    }
-    
-    /*
-    while(map -> buckets[hashPosicion] != NULL)
+    while(map -> buckets[hashPosicion] -> key != NULL)
     {
         if(map -> buckets[hashPosicion] -> key == key)
         {
@@ -123,9 +104,9 @@ Pair * searchMap(HashMap * map,  char * key)
                 hashPosicion++; 
         }
     }
-    */
+
     map -> current = hashPosicion;
-    return bloque;
+    return NULL;
 }
 
 Pair * firstMap(HashMap * map) {
