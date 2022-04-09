@@ -244,3 +244,14 @@ hashmap.c:96:20: error: return from incompatible pointer type [-Werror=incompati
 cc1.exe: all warnings being treated as errors
 Compilation failed
 815fcbc
+sá.,  9 de abr. de 2022 17:16:42: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function 'searchMap':
+hashmap.c:96:20: error: return makes pointer from integer without a cast [-Werror=int-conversion]
+             return *key;
+                    ^~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+83b77c0

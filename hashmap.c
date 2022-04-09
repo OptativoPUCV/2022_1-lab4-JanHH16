@@ -93,7 +93,7 @@ Pair * searchMap(HashMap * map,  char * key)
         {
             map -> current = hashPosicion;
             //bloque = map -> buckets[hashPosicion];
-            return key;
+            return *key;
         }
         else
         {
