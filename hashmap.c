@@ -89,12 +89,13 @@ void eraseMap(HashMap * map,  char * key)
     {
         while(map -> buckets[hashPosicion] != NULL && is_equal(map -> buckets[hashPosicion] -> key, key) == 0)
         {
-            hashPosicion = (hashPosicion + 1) % map -> capacity;
+            
             if(is_equal( map -> buckets[hashPosicion] -> key , key))
             {
                 map -> size--;
                 map -> buckets[hashPosicion] -> key = NULL;
             }
+            hashPosicion = (hashPosicion + 1) % map -> capacity;
         }
     }
 }
