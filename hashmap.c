@@ -94,7 +94,7 @@ Pair * searchMap(HashMap * map,  char * key)
             map -> current = hashPosicion;
             //bloque -> key = map -> buckets[hashPosicion] -> key;
             //bloque -> value = map -> buckets[hashPosicion] -> value;
-            return map -> buckets[hashPosicion] -> value;
+            return map -> buckets[hashPosicion];
         }
         else
         {
