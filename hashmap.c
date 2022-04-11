@@ -61,7 +61,7 @@ void enlarge(HashMap * map) {
     capacidad = map -> capacity;
     Pair **copiaArreglo = map -> buckets;
     map -> capacity = capacidad * 2;
-    map -> buckets = malloc(sizeof(Pair) * (map -> capacity));
+    map -> buckets = malloc(sizeof(Pair) * (capacidad*2));
     map -> size = 0;
     for(int i = 0 ; i < capacidad ; i++)
     {
