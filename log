@@ -428,3 +428,9 @@ hashmap.c:130:18: error: operation on 'posicion' may be undefined [-Werror=seque
 cc1.exe: all warnings being treated as errors
 Compilation failed
 a534832
+do., 10 de abr. de 2022 23:20:15: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  13|2
+total_score: 50/70
+55c6124
