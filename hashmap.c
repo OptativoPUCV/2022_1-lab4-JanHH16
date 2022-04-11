@@ -98,6 +98,10 @@ void eraseMap(HashMap * map,  char * key)
         }
         
     }
+    if(map -> buckets[hashPosicion] == NULL)
+    {
+        return ;
+    }
 
 }
 
