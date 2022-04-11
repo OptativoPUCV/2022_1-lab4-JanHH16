@@ -80,16 +80,15 @@ void eraseMap(HashMap * map,  char * key)
     int hashPosicion;
     hashPosicion =  hash(key, map -> capacity);
 
-    if(is_equal( map -> buckets[hashPosicion] -> key , key))
+    if(is_equal(map -> buckets[hashPosicion] -> key , key))
     {
         map -> size--;
         map -> buckets[hashPosicion] -> key = NULL;
     }
     else
     {
-        while(map -> buckets[hashPosicion] != NULL && is_equal(map -> buckets[hashPosicion] -> key, key) == 0)
+        while(map -> buckets[hashPosicion] != NULL)
         {
-            
             if(is_equal( map -> buckets[hashPosicion] -> key , key))
             {
                 map -> size--;
