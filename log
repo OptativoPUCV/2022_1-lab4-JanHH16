@@ -434,3 +434,14 @@ do., 10 de abr. de 2022 23:20:15:
  tests:  13|2
 total_score: 50/70
 55c6124
+do., 10 de abr. de 2022 23:45:03: 
+ hashmap.c | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+In file included from test.c:4:0:
+hashmap.c: In function 'enlarge':
+hashmap.c:63:20: error: assignment from incompatible pointer type [-Werror=incompatible-pointer-types]
+     map -> buckets = (Pair*) malloc(sizeof(Pair) * map -> capacity);
+                    ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+b5410f0
