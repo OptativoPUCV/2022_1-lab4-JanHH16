@@ -417,3 +417,14 @@ do., 10 de abr. de 2022 23:14:55:
  tests:  11|2
 total_score: 50/70
 952da1a
+do., 10 de abr. de 2022 23:19:52: 
+ hashmap.c | 9 +++++++--
+ 1 file changed, 7 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function 'firstMap':
+hashmap.c:130:18: error: operation on 'posicion' may be undefined [-Werror=sequence-point]
+         posicion = posicion = (posicion + 1) % map -> capacity;
+         ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+a534832
