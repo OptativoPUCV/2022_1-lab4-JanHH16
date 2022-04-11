@@ -70,7 +70,7 @@ void enlarge(HashMap * map) {
             insertMap(map,copiaArreglo[i] -> key,copiaArreglo[i] -> value);
         }
     }
-    free(copiaArreglo);
+    //free(copiaArreglo);
 
 }
 
