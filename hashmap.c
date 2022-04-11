@@ -89,36 +89,26 @@ void eraseMap(HashMap * map,  char * key)
     {
         while(map -> buckets[hashPosicion] != NULL && is_equal(map -> buckets[hashPosicion] -> key, key) == 0)
         {
-            hashPosicion = (hashPosicion + 1) % map -> capacity; 
+            hashPosicion = (hashPosicion + 1) % map -> capacity;
+            if(is_equal( map -> buckets[hashPosicion] -> key , key))
+            {
+                map -> size--;
+                map -> buckets[hashPosicion] -> key = NULL;
+            }
         }
-        if(is_equal( map -> buckets[hashPosicion] -> key , key))
-        {
-            map -> size--;
-            map -> buckets[hashPosicion] -> key = NULL;
-        }
-        
     }
-    if(map -> buckets[hashPosicion] == NULL)
-    {
-        return ;
-    }
-
 }
 
 Pair * searchMap(HashMap * map,  char * key) 
 {   
     int hashPosicion;
     hashPosicion =  hash(key, map -> capacity);
-    
-    //Pair *bloque;
 
     while(map -> buckets[hashPosicion] != NULL)
     {   
-        if(is_equal(map -> buckets[hashPosicion] -> key,key)) //(map -> buckets[hashPosicion] -> key) == key)
+        if(is_equal(map -> buckets[hashPosicion] -> key,key))
         {
             map -> current = hashPosicion;
-            //bloque -> key = map -> buckets[hashPosicion] -> key;
-            //bloque -> value = map -> buckets[hashPosicion] -> value;
             return map -> buckets[hashPosicion];
         }
         else
